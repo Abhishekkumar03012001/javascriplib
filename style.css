@@ -1,0 +1,171 @@
+
+
+.box{
+    position: relative;
+    width:  5vw;
+    height: 5vw;
+    margin: 1vw;
+    display: inline-block;
+    
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: royalblue;
+}
+.green{
+    background-color: greenyellow;
+}
+.purple{
+    background-color: yellow;
+}
+.banner{
+    background-image: url("pexels-chait-goli-2666598.jpg");
+    height: 50vw;
+    background-size: 100%;
+    text-align: right;
+    color: yellow;
+    padding-top: 7%;
+    padding-right: 3%;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-repeat: no-repeat;
+}
+.white{
+    color: white;
+}
+body{
+    background-color: black;
+}
+@media (min-width:1200px)
+{
+    h1{
+        font-size: 400%;
+    }
+}
+@media (max-width:1200px)
+{
+    h1{
+        font-size: 300%;
+    }
+}
+@media (max-width: 900px)
+ {
+     h1{
+         font-size: 200%;
+         
+     }
+     
+ }
+ @media (max-width: 600px)
+ {
+     h1{
+         font-size: 150%;
+         
+     }
+     
+ }
+ @media (max-width:450px)
+ {
+     h1{
+         font-size: 90%;
+         
+     }
+     p{
+         font-size: small;
+     }
+ }
+ .jumbotron{
+   color: whitesmoke;
+   padding-top: 2em;
+ }
+ .googlefonts{
+   color: yellow;
+  font-family: 'IM Fell English SC', serif;
+  size: 30%;
+ }
+ h4{
+   size: 10%;
+  font-family: 'IM Fell English SC', serif;
+ }
+ .mss{
+     font-size: larger;
+     color: white;
+ }
+ .clock {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    
+
+  }
+  
+  .clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+  }
+  
+  .clock .number1 { --rotation: 30deg; }
+  .clock .number2 { --rotation: 60deg; }
+  .clock .number3 { --rotation: 90deg; }
+  .clock .number4 { --rotation: 120deg; }
+  .clock .number5 { --rotation: 150deg; }
+  .clock .number6 { --rotation: 180deg; }
+  .clock .number7 { --rotation: 210deg; }
+  .clock .number8 { --rotation: 240deg; }
+  .clock .number9 { --rotation: 270deg; }
+  .clock .number10 { --rotation: 300deg; }
+  .clock .number11 { --rotation: 330deg; }
+  
+  .clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  }
+  
+  .clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+  }
+  
+  .clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color:yellow;
+  }
+  
+  .clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color:yellow;
+  }
